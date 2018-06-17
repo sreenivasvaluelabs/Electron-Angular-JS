@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Crazy Images</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.angularjs.org/1.6.4/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.6.4/angular-route.min.js"></script>
+	<script src="./node_modules/ng-ast/ng-ast.js"></script>
+
+</head>
+<body>
+	<div id="content">
+		<header ng-controller="headCtrl">
+				<section id="welcome" class="wrapper style1 fullscreen intro">
+						<div class="inner">
+						  <h1>Electron -Angularjs  app</h1>
+						  <p>Hopefully this helps someone to get up to speed with electron along with angularjs.</p>
+						  <ul class="actions">
+							<li><a href="#one" id="learn-more-button" class="button scrolly">Learn more</a></li>
+						  </ul>
+						</div>
+					  </section>
+			<div class="option" ng-click="close()">&#x2716;</div>
+			<div class="option" ng-click="maximize()">&#x1f5d6;</div>
+			<div class="option" ng-click="minimize()">&#x1f5d5;</div>
+		</header>
+		<div id="mainContent" ng-view></div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
